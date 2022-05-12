@@ -3,6 +3,8 @@
 
 /*** 
  * `quotes` array 
+ *  assign quote with properties to every object
+ *  assign objects to array
 ***/
 
 q1={quote:"Stay hungry, stay foolish.",source:"Steve Jobs",citation:"washingtonpost",year:"2011"};
@@ -12,10 +14,11 @@ q4={quote:"Don’t count the days, make the days count.",source:"Muhammad Ali"};
 q5={quote:"The future belongs to those who prepare for it today.",source:"Malcolm X"};
 const quotes=[q1,q2,q3,q4,q5];
 
-console.log(quotes);
 
 /***
  * `getRandomQuote` function
+ *  generate randomNubmer
+ *  return quote 
 ***/
 function getRandomQuote(){
     let randomNumber=Math.floor(Math.random()*quotes.length);
@@ -25,6 +28,7 @@ function getRandomQuote(){
 
 /***
  * `printQuote` function
+ *  change HTML content of the target element 
 ***/
 function printQuote(){
     let randomQuote=getRandomQuote();
@@ -46,7 +50,7 @@ function printQuote(){
 
 /***
  * click event listener for the print quote button
- * The code will look like the following. You need to complete it.
+ * when click event is triggered, call the pritQuote function
 
 ***/
 
